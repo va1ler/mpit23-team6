@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Учетный лист
+{% endblock %}
+
+
+{% block body %}
+<center>
+    <div class="container mt-5">
+    <h1>Учетный лист</h1>
+
+    {% for el in articles%}
+    <div class="alert alert-info">
+        <h2>{{ el.FIO }}</h2>
+        <p>Дата прибытия:{{  el.dateofa  }}</p>
+        <p>Дата убытия:{{  el.dateofd  }}</p>
+        <p>Номер разрешения:{{  el.YON  }}</p>
+        <p>Причина по которрой приехал:{{  el.wtkk  }}</p>
+        <p>Количество прибывших:{{  el.kol  }}</p>
+        <p>Транспорт на котором прибыл:{{  el.transport  }}</p>
+    </div>
+    {% endfor %}
+</div>
+</center>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Отдача в таблицу
+{% endblock %}
+
+
+{% block body %}
+<center>
+    <div class="container mt-5" xmlns="http://www.w3.org/1999/html">
+    <h1>Добавление данных в таблицу</h1>
+    <form method="post">
+        <input type="text" name="FIO" id="FIO" class="form-control" placeholder="Введите Фио"><br>
+        <input type="number" name="YON" id="YON" class="form-control" placeholder="Введите номер разрешения"><br>
+        <input type="date" name="dateofa" id="dateofa" class="form-control" placeholder="Введите дату прибытия"><br>
+        <input type="date" name="dateofd" id="dateofd" class="form-control" placeholder="Введите даты отбытия"><br>
+        <input type="text" name="wtkk" id="wtkk" class="form-control" placeholder="Введите цель посещения"><br>
+        <input type="number" name="kol" id="kol" class="form-control"placeholder="Введите количество прибывания"><br>
+        <input type="text" name="transport" id="transport" class="form-control"placeholder="Введите вид транспорта"><br>
+        <input type="submit" class="btn btn-success" value="Отправить на сервер"><br>
+    </form>
+</div>
+</center>
+
+{% endblock %}
